@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
 import { Box, VStack, Input, Heading, Button, Spinner } from '@chakra-ui/react'
+import ReactMarkdown from "react-markdown"
 
 export default function Home() {
   const [city, setCity] = useState("")
@@ -27,7 +28,7 @@ export default function Home() {
             <Button onClick={getAdvice}>Get advice</Button>
             <Box h="400px" overflowY="scroll" p={4} display={"flex"} flexDirection={"column"}>
                 { loading === true ? <Spinner /> :
-                  (advice !== undefined ? <p>{advice}</p> : <p>{`Error: ${error}`}</p>)  
+                  (advice !== undefined ? <ReactMarkdown>{advice}</ReactMarkdown> : <p>{`Error: ${error}`}</p>)  
                 }
             </Box>
         </VStack>
