@@ -62,6 +62,21 @@ Gemini Response:
 }
 ```
 
+## Running Tests
+
+To run the tests:
+
+```
+npm run test
+```
+
+Make sure to create a `.env.test` file with:
+```
+GEMINI_API_KEY=test_dummy_key
+```
+
+Tests are using a mock for @google/generative-ai located at `__mocks__/`.
+
 ## 📎 Credits
 
 Built for learning how to integrate MCP + Gemini + public APIs.
