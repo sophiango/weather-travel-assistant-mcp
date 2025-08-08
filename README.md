@@ -1,6 +1,6 @@
 # 🌦️ Gemini Weather Travel Assistant (MCP Demo)
 
-This project demonstrates how to build a Minimal Context Protocol (MCP)-enabled app using:
+This project demonstrates how to build a Model Context Protocol (MCP) using:
 
 - 🌐 OpenWeatherMap public API
 - 🧠 Gemini (Google Generative AI)
